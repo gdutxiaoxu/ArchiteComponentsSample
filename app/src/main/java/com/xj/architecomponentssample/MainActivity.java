@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.xj.architecomponentssample.lifecycle.CustomLifecycleActivity;
+import com.xj.architecomponentssample.lifecycle.LifecycleHandlerActivity;
+import com.xj.architecomponentssample.lifecycle.LifecycleMVPActivity;
 import com.xj.architecomponentssample.lifecycle.MediaCompoment;
 import com.xj.architecomponentssample.lifecycle.SimpleLifecycleActivity;
 import com.xj.architecomponentssample.livedata.LiveDataSampleActivity;
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnFragmentActivity;
     private Button mBtnLivedata;
     private Button mBtnSimpleLifecycle;
+    private Button mBtnLifecycleHandler;
+    private Button mBtnLifecycleMvp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, CustomLifecycleActivity.class));
             }
         });
+
         mBtnLivedata = findViewById(R.id.btn_livedata);
         mBtnLivedata.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,11 +69,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LiveDataSampleActivity.class));
             }
         });
+
         mBtnSimpleLifecycle = findViewById(R.id.btn_simple_lifecycle);
         mBtnSimpleLifecycle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SimpleLifecycleActivity.class));
+            }
+        });
+
+        mBtnLifecycleHandler = findViewById(R.id.btn_lifecycle_handler);
+        mBtnLifecycleHandler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LifecycleHandlerActivity.class));
+            }
+        });
+
+        mBtnLifecycleMvp = findViewById(R.id.btn_lifecycle_mvp);
+        mBtnLifecycleMvp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LifecycleMVPActivity.class));
             }
         });
     }
