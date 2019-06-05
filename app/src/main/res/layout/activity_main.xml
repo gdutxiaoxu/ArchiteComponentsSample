@@ -12,32 +12,44 @@
         android:id="@+id/btn_fragment_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Custom Lifecycle" />
+        android:text="Custom Lifecycle"
+        android:textAllCaps="false" />
 
 
     <Button
         android:id="@+id/btn_simple_lifecycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simple Lifecycle" />
+        android:text="Simple Lifecycle"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_livedata"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LiveData" />
+        android:text="LiveData"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_lifecycle_handler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="lifecycle_handler" />
+        android:text="lifecycle_handler"
+        android:textAllCaps="false"/>
 
 
     <Button
         android:id="@+id/btn_lifecycle_mvp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="lifecycle_mvp" />
+        android:text="lifecycle_mvp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_livedata_transfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="livedata transfrom"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

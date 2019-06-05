@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lifecycle.LifecycleMVPActivity"></activity>
+        <activity android:name=".livedata.LiveDataTransfromActivity"></activity>
+        <activity android:name=".lifecycle.LifecycleMVPActivity" />
         <activity android:name=".lifecycle.LifecycleHandlerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

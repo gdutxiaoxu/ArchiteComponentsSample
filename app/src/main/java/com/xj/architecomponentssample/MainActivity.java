@@ -19,6 +19,7 @@ import com.xj.architecomponentssample.lifecycle.LifecycleMVPActivity;
 import com.xj.architecomponentssample.lifecycle.MediaCompoment;
 import com.xj.architecomponentssample.lifecycle.SimpleLifecycleActivity;
 import com.xj.architecomponentssample.livedata.LiveDataSampleActivity;
+import com.xj.architecomponentssample.livedata.LiveDataTransfromActivity;
 import com.xj.architecomponentssample.livedata.NetworkLiveData;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnSimpleLifecycle;
     private Button mBtnLifecycleHandler;
     private Button mBtnLifecycleMvp;
+    private Button mBtnLivedataTransfrom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onChanged: networkInfo=" + networkInfo);
             }
         });
+
     }
 
     private void initView() {
@@ -91,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LifecycleMVPActivity.class));
+            }
+        });
+
+        mBtnLivedataTransfrom = findViewById(R.id.btn_livedata_transfrom);
+        mBtnLivedataTransfrom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LiveDataTransfromActivity.class));
             }
         });
     }
